@@ -1,0 +1,51 @@
+.header {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 12px;
+  // left: 21px;
+  justify-content: flex-start;
+  // position: static;
+  // top: 51px;
+  width: 332px;
+
+  &--logo {
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+
+    /* Ellipse 1 */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("./../../../assets/Ellipse\ 1.png");
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+
+  &--user {
+    flex-grow: 99;
+
+    .header--name {
+      font-size: 12px;
+    }
+
+    .header--points {
+      display: flex;
+
+      .header--crown {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &--add {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
