@@ -7,7 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { CompetitionsComponent } from './containers/competitions/competitions.component';
 import { CardComponent } from './components/card/card.component';
 import { PlayerComponent } from './components/player/player.component';
-import { CtaButtonComponent } from './components/cta-button/cta-button.component';
+import { StatusComponent } from './components/status/status.component';
+import { MoreButtonComponent } from './components/more-button/more-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CtaButtonComponent } from './components/cta-button/cta-button.component
     CompetitionsComponent,
     CardComponent,
     PlayerComponent,
-    CtaButtonComponent,
+    MoreButtonComponent,
+    StatusComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
