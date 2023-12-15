@@ -54,3 +54,10 @@ noscript {
   flex-direction: column;
   margin-top: 20px;
 }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}

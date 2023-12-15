@@ -9,6 +9,7 @@ import { CardComponent } from './components/card/card.component';
 import { PlayerComponent } from './components/player/player.component';
 import { StatusComponent } from './components/status/status.component';
 import { MoreButtonComponent } from './components/more-button/more-button.component';
+import { AddButtonComponent } from './components/add-button/add-button.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MoreButtonComponent } from './components/more-button/more-button.compon
     PlayerComponent,
     MoreButtonComponent,
     StatusComponent,
+    AddButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
