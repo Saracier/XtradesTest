@@ -1,0 +1,71 @@
+<div class="player">
+  <div class="player--background">
+    <div class="player--color">
+      <div class="player--place">
+        <div class="place--number">{{ place }}</div>
+        <div class="place--text">
+          {{ place === "1" ? "st" : place === "2" ? "nd" : "rd" }}
+        </div>
+      </div>
+    </div>
+    <div class="player--shade"></div>
+  </div>
+  <div class="player--data">
+    <div class="player--img">
+      <img src="./../../../assets/user1.png" alt="user image" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="48"
+        height="41"
+        viewBox="0 0 50 44"
+        fill="none"
+      >
+        <path
+          d="M37.0013 3.51127C35.9025 1.58631 33.9249 0.375 31.7302 0.375L14.2698 0.375C12.0751 0.375 10.0975 1.58631 8.99869 3.51127L2.20504 17.2547C1.16679 19.2312 1.16679 21.7688 2.20504 23.7453L8.99869 37.4887C10.0975 39.4137 12.0751 40.625 14.2698 40.625H31.7302C33.9249 40.625 35.9025 39.4137 37.0013 37.4887L43.795 23.7453C44.8332 21.7688 44.8332 19.2312 43.795 17.2547L37.0013 3.51127Z"
+          stroke="white"
+          stroke-opacity="0.2"
+        />
+      </svg>
+    </div>
+    <div class="player--statictics">
+      <div class="player--name">
+        Roger Korsgaard
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+        >
+          <path
+            d="M5.89826 0.727209C6.56653 0.286114 7.43347 0.286114 8.10175 0.72721L8.95472 1.29022C9.16759 1.43072 9.40536 1.52921 9.65523 1.58038L10.6565 1.78542C11.4409 1.94605 12.0539 2.55908 12.2146 3.34352L12.4196 4.34477C12.4708 4.59464 12.5693 4.83241 12.7098 5.04528L13.2728 5.89826C13.7139 6.56653 13.7139 7.43347 13.2728 8.10174L12.7098 8.95472C12.5693 9.16759 12.4708 9.40536 12.4196 9.65523L12.2146 10.6565C12.0539 11.4409 11.4409 12.0539 10.6565 12.2146L9.65523 12.4196C9.40536 12.4708 9.16759 12.5693 8.95472 12.7098L8.10174 13.2728C7.43347 13.7139 6.56653 13.7139 5.89825 13.2728L5.04528 12.7098C4.83241 12.5693 4.59464 12.4708 4.34477 12.4196L3.34352 12.2146C2.55908 12.0539 1.94605 11.4409 1.78542 10.6565L1.58038 9.65523C1.52921 9.40536 1.43072 9.16759 1.29022 8.95472L0.727209 8.10174C0.286114 7.43347 0.286114 6.56653 0.727209 5.89825L1.29022 5.04528C1.43072 4.83241 1.52921 4.59464 1.58038 4.34477L1.78542 3.34352C1.94605 2.55908 2.55908 1.94605 3.34352 1.78542L4.34477 1.58038C4.59464 1.52921 4.83241 1.43072 5.04528 1.29022L5.89826 0.727209Z"
+            fill="#00A5EA"
+          />
+          <path
+            d="M5.95 7.69922L4.55 6.29922L3.5 7.34922L5.95 9.79922L10.5 5.24922L9.45 4.19922L5.95 7.69922Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="player--score">
+        <div class="player--score__single">
+          <span class="score--number">20</span>
+          <span class="score--description">Alerts</span>
+        </div>
+        <div class="player--score__single">
+          <span class="score--number">85%</span>
+          <span class="score--description">Win Rate</span>
+        </div>
+        <div class="player--score__single">
+          <span class="score--number">11%</span>
+          <span class="score--description">Yield</span>
+        </div>
+      </div>
+    </div>
+    <div class="player--balance">
+      <span>+ $7,500</span>
+      <span>45%</span>
+    </div>
+  </div>
+</div>

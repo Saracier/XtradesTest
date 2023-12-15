@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CompetitionsComponent } from './containers/competitions/competitions.component';
 import { CardComponent } from './components/card/card.component';
+import { PlayerComponent } from './components/player/player.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { CardComponent } from './components/card/card.component';
     HeaderComponent,
     CompetitionsComponent,
     CardComponent,
+    PlayerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

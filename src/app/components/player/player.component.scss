@@ -1,0 +1,124 @@
+.player {
+  margin: 10px 15px 10px 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 77px;
+  position: relative;
+  // width: 100%;
+  // background: linear-gradient(90deg, rgba(129, 237, 186, 0) 0%, #54ffae 100%);
+
+  &--background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .player--color {
+      width: 50px;
+      height: 77px;
+      background-color: #cae2cc;
+
+      .player--place {
+        opacity: 0.2;
+        padding: 5px;
+        position: relative;
+        top: -10px;
+        left: 3px;
+        font-style: italic;
+
+        .place--number {
+          font-size: 33px;
+          display: inline-block;
+          // height: 100%;
+          font-weight: 600;
+        }
+
+        .place--text {
+          font-size: 16px;
+          display: inline-block;
+          font-weight: 600;
+          position: relative;
+          top: -13px;
+        }
+      }
+    }
+    .player--shade {
+      width: calc(100% - 50px);
+      background: linear-gradient(
+        90deg,
+        rgba(129, 237, 186, 0) 0%,
+        #54ffae 100%
+      );
+      opacity: 0.15;
+    }
+  }
+
+  .player--data {
+    position: relative;
+    top: -77px;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    .player--img {
+      position: relative;
+      margin-left: 11px;
+
+      img {
+        width: 48px;
+        height: 41px;
+        clip-path: path(
+          "M14.4,0.616 L30.96,0.616 A4.56,4.56 0 0,1 35.52,3.04 L42.24,16.776 A4.56,4.56 0 0,1 42.24,21.224 L35.52,34.96 A4.56,4.56 0 0,1 30.96,37.384 L14.4,37.384 A4.56,4.56 0 0,1 9.84,34.96 L3.04,21.224 A4.56,4.56 0 0,1 3.04,16.776 L9.84,3.04 A4.56,4.56 0 0,1 14.4,0.616"
+        );
+      }
+
+      svg {
+        position: absolute;
+        left: -47px;
+      }
+    }
+
+    .player--statictics {
+      margin-left: 13px;
+      color: white;
+      .player--name {
+        font-size: 16px;
+      }
+      .player--score {
+        display: flex;
+        .player--score__single {
+          display: flex;
+          flex-direction: column;
+          margin-right: 10px;
+          .score--number {
+            font-size: 14px;
+          }
+          .score--description {
+            font-size: 10px;
+            font-weight: 400;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .player--balance {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-weight: 600;
+      color: #88ffc7;
+
+      .balance--money {
+        font-size: 14px;
+      }
+
+      .balance--percentage {
+        font-size: 10px;
+      }
+    }
+  }
+}
