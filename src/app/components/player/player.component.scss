@@ -1,5 +1,5 @@
 .player {
-  margin: 10px 15px 10px 15px;
+  margin: 10px 0 10px 0;
   border-radius: 8px;
   overflow: hidden;
   height: 77px;
@@ -38,14 +38,24 @@
         }
       }
     }
+
     .player--shade {
       width: calc(100% - 50px);
+      opacity: 0.15;
+    }
+    .player--shade__won {
       background: linear-gradient(
         90deg,
         rgba(129, 237, 186, 0) 0%,
         #54ffae 100%
       );
-      opacity: 0.15;
+    }
+    .player--shade__lost {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 111, 111, 0) 0%,
+        #ff6f6f 100%
+      );
     }
   }
 
@@ -107,7 +117,6 @@
       flex-direction: column;
       text-align: right;
       font-weight: 600;
-      color: #88ffc7;
 
       .balance--money {
         font-size: 14px;
@@ -116,6 +125,14 @@
       .balance--percentage {
         font-size: 10px;
       }
+    }
+
+    .player--balance__won {
+      color: #88ffc7;
+    }
+
+    .player--balance__lost {
+      color: #ff6f6f;
     }
   }
 }

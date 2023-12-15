@@ -1,1 +1,3 @@
-<button class="cta cta--reset"><span class="cta--text">View</span></button>
+<button class="cta cta--reset" [class.cta--disable]="!isTooLateToJoin">
+  <span class="cta--text">View</span>
+</button>

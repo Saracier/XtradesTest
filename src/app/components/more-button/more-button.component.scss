@@ -12,14 +12,24 @@
   align-items: center;
   justify-content: center;
   border-radius: 13px;
+  background: var(
+    --Grad-2,
+    linear-gradient(117deg, #81edb9 16.87%, #c2f0ed 86.01%)
+  );
+
+  .cta--text {
+    color: #082618;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+}
+.cta--disable {
   border: 0.5px solid rgba(255, 255, 255, 0.2);
   background: #303236;
 
   .cta--text {
     color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
   }
 }

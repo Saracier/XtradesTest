@@ -1,10 +1,10 @@
 <div class="status">
   <div class="status--logo">
-    <img src="../../../assets/user1.png" alt="user1" />
+    <img [src]="user.img" alt="user photo" />
   </div>
   <div class="status--user">
-    <span class="user--name">Roger K</span>
-    <span class="user--tag">@rog13k</span>
+    <span class="user--name">{{ user.login }}</span>
+    <span class="user--tag">{{ user.userTag }}k</span>
   </div>
   <div class="status--info">
     <svg
