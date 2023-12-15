@@ -1,24 +1,24 @@
 .status {
-  height: 60px;
-  width: 100%;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 60px;
   justify-content: space-between;
+  width: 100%;
 
   .status--logo {
+    flex-grow: 1;
+
     img {
       border-radius: 50%;
-      width: 24px;
       height: 24px;
+      width: 24px;
     }
-
-    flex-grow: 1;
   }
 
   .status--user {
     display: flex;
-    flex-direction: column;
     color: #fff;
+    flex-direction: column;
     flex-grow: 1;
 
     .user--name {
@@ -34,26 +34,26 @@
   }
 
   .status--info {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
 
     .info--days {
       background: #261516;
-      width: 24px;
-      height: 24px;
-      stroke: #ff6f6f;
-      color: #ff6f6f;
-      font-size: 12px;
       border: 2px solid #ff6f6f;
       border-radius: 50%;
-      text-align: center;
+      color: #ff6f6f;
+      font-size: 12px;
+      height: 24px;
       line-height: 22px;
+      stroke: #ff6f6f;
+      text-align: center;
+      width: 24px;
     }
 
     .info--additional {
-      margin-left: 8px;
       color: #fff;
+      margin-left: 8px;
 
       .info--data {
         font-size: 10px;

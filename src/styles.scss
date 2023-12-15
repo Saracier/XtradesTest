@@ -8,8 +8,8 @@
 
 html,
 body {
-  height: 100%;
   font-family: "Poppins", "Roboto", "Helvetica Neue", sans-serif;
+  height: 100%;
 }
 
 html {
@@ -47,11 +47,11 @@ table {
 }
 
 noscript {
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -59,17 +59,17 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
   appearance: button;
-  -moz-appearance: button;
   -ms-appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
 }
 
 noscript {
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
+  justify-content: center;
   margin-top: 20px;
 }
