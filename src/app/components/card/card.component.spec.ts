@@ -7,6 +7,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 describe('CardComponent', () => {
   let component: CardComponent;
   let fixture: ComponentFixture<CardComponent>;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let mockUserService: MockUserService;
 
   beforeEach(async () => {

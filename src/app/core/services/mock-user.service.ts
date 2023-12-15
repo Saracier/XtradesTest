@@ -5,8 +5,6 @@ import { IUserData } from '../../interfaces/IUserData';
   providedIn: 'root',
 })
 export class MockUserService {
-  constructor() {}
-
   public userData: IUserData[] = [
     {
       id: 1,

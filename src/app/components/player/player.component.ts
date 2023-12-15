@@ -7,6 +7,6 @@ import { IUserData } from 'src/app/interfaces/IUserData';
   styleUrls: ['./player.component.scss'],
 })
 export class PlayerComponent {
-  @Input() place: string = '';
+  @Input() place = '';
   @Input() user!: IUserData;
 }
