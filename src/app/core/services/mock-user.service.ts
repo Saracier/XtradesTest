@@ -8,7 +8,6 @@ export class MockUserService {
   constructor() {}
 
   public userData: IUserData[] = [
-    // Istniejące elementy
     {
       id: 1,
       img: '/assets/user1.png',
