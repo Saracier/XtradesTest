@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CompetitionsComponent } from './containers/competitions/competitions.component';
 import { CardComponent } from './components/card/card.component';
 import { PlayerComponent } from './components/player/player.component';
+import { CtaButtonComponent } from './components/cta-button/cta-button.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { PlayerComponent } from './components/player/player.component';
     CompetitionsComponent,
     CardComponent,
     PlayerComponent,
+    CtaButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
