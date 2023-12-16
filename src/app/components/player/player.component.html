@@ -2,10 +2,10 @@
   <div class="player__background">
     <div class="player__color">
       <div class="player__place">
-        <div class="place__number">{{ place }}</div>
-        <div class="place__text">
+        <span class="place__number">{{ place }}</span>
+        <span class="place__text">
           {{ place === "1" ? "st" : place === "2" ? "nd" : "rd" }}
-        </div>
+        </span>
       </div>
     </div>
     <div
@@ -17,23 +17,25 @@
   <div class="player__data">
     <div class="player__img">
       <img [src]="user.img" alt="user image" />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="48"
-        height="41"
-        viewBox="0 0 50 44"
-        fill="none"
-      >
-        <path
-          d="M37.0013 3.51127C35.9025 1.58631 33.9249 0.375 31.7302 0.375L14.2698 0.375C12.0751 0.375 10.0975 1.58631 8.99869 3.51127L2.20504 17.2547C1.16679 19.2312 1.16679 21.7688 2.20504 23.7453L8.99869 37.4887C10.0975 39.4137 12.0751 40.625 14.2698 40.625H31.7302C33.9249 40.625 35.9025 39.4137 37.0013 37.4887L43.795 23.7453C44.8332 21.7688 44.8332 19.2312 43.795 17.2547L37.0013 3.51127Z"
-          stroke="white"
-          stroke-opacity="0.2"
-        />
-      </svg>
+      <div *ngIf="!user.isAuthenticatedUset">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="48"
+          height="41"
+          viewBox="0 0 50 44"
+          fill="none"
+        >
+          <path
+            d="M37.0013 3.51127C35.9025 1.58631 33.9249 0.375 31.7302 0.375L14.2698 0.375C12.0751 0.375 10.0975 1.58631 8.99869 3.51127L2.20504 17.2547C1.16679 19.2312 1.16679 21.7688 2.20504 23.7453L8.99869 37.4887C10.0975 39.4137 12.0751 40.625 14.2698 40.625H31.7302C33.9249 40.625 35.9025 39.4137 37.0013 37.4887L43.795 23.7453C44.8332 21.7688 44.8332 19.2312 43.795 17.2547L37.0013 3.51127Z"
+            stroke="white"
+            stroke-opacity="0.2"
+          />
+        </svg>
+      </div>
     </div>
     <div class="player__statictics">
-      <div class="player__name">
+      <h3 class="player__name">
         {{ user.firstName }} {{ user.secondName }}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +53,7 @@
             fill="white"
           />
         </svg>
-      </div>
+      </h3>
       <div class="player__score">
         <div class="player__score--single">
           <span class="score__number">{{ user.alert }}</span>
