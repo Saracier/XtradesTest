@@ -10,8 +10,17 @@
     height: 100%;
     width: 100%;
 
-    .player__color {
+    .player__color--first {
       background-color: #cae2cc;
+    }
+    .player__color--second {
+      background-color: #cec4ed;
+    }
+    .player__color--third {
+      background-color: #dcd7ce;
+    }
+
+    .player__color {
       height: 77px;
       width: 50px;
 
@@ -70,6 +79,8 @@
     .player__img {
       margin-left: 15px;
       position: relative;
+      display: flex;
+      justify-content: center;
 
       img {
         clip-path: path(
@@ -80,13 +91,13 @@
       }
 
       object {
-        left: -47px;
+        left: 0px;
         position: absolute;
       }
     }
 
     .player__statictics {
-      color: white;
+      color: #fff;
       margin-left: 13px;
 
       .player__name {
@@ -122,7 +133,7 @@
       position: absolute;
       right: 10px;
       text-align: right;
-      top: 40px;
+      top: 30px;
 
       .balance__money {
         font-size: 14px;

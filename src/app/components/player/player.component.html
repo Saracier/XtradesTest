@@ -1,6 +1,11 @@
 <div class="player">
   <div class="player__background">
-    <div class="player__color">
+    <div
+      class="player__color"
+      [class.player__color--first]="place === '1'"
+      [class.player__color--second]="place === '2'"
+      [class.player__color--third]="place === '3'"
+    >
       <div class="player__place">
         <span class="place__number">{{ place }}</span>
         <span class="place__text">
