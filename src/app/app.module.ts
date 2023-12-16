@@ -10,6 +10,7 @@ import { PlayerComponent } from './components/player/player.component';
 import { StatusComponent } from './components/status/status.component';
 import { MoreButtonComponent } from './components/more-button/more-button.component';
 import { AddButtonComponent } from './components/add-button/add-button.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AddButtonComponent } from './components/add-button/add-button.component
     MoreButtonComponent,
     StatusComponent,
     AddButtonComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
