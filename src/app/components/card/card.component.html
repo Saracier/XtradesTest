@@ -16,7 +16,9 @@
     </div>
     <span class="status" [class.hide]="isTooLateToJoin">Too late to join</span>
   </div>
-  <h2 class="card__title">Weekly Challenges</h2>
+  <h2 class="card__title" [class.card__title--late]="!isTooLateToJoin">
+    Weekly Challenges
+  </h2>
   <app-player place="1" [user]="users[3]"></app-player>
   <app-player place="2" [user]="users[4]"></app-player>
   <app-player place="3" [user]="users[5]"></app-player>
