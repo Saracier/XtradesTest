@@ -35,6 +35,8 @@ select {
 button {
   border: none;
   cursor: pointer;
+  font: inherit;
+  padding: 0;
 }
 
 textarea {
