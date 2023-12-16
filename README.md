@@ -3,7 +3,7 @@
 This is a simple app created from a Figma mockup, intended to be displayed on an iPhone 14. <br/>
 It was developed as a recruitment task for Xtrades.net. <br/>
 You can find the live demo at: <br/>
-[https://657d885b8ccef3276a9637a6--glittering-sable-3e6c84.netlify.app/](https://glittering-sable-3e6c84.netlify.app/)
+[https://glittering-sable-3e6c84.netlify.app/](https://glittering-sable-3e6c84.netlify.app/)
 <br/>
 ![image](https://github.com/Saracier/XtradesTest/assets/105667230/951449ce-e3c1-496c-a94b-f62e5dd5985a)
 
