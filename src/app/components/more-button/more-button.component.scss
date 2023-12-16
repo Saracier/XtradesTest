@@ -1,4 +1,4 @@
-.cta--reset {
+.cta__reset {
   border: none;
   cursor: pointer;
   font: inherit;
@@ -17,7 +17,7 @@
   justify-content: center;
   width: 303px;
 
-  .cta--text {
+  &__text {
     color: #082618;
     font-size: 12px;
     font-weight: 600;
@@ -25,11 +25,12 @@
     text-transform: uppercase;
   }
 }
+
 .cta--disable {
   background: #303236;
   border: 0.5px solid rgba(255, 255, 255, 0.2);
 
-  .cta--text {
+  .cta__text {
     color: #fff;
   }
 }

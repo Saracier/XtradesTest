@@ -6,7 +6,7 @@
   justify-content: flex-start;
   width: 332px;
 
-  &--logo {
+  &__logo {
     align-items: center;
     color: white;
     display: flex;
@@ -17,29 +17,29 @@
 
     /* Ellipse */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("./../../../assets/Ellipse\ 1.png");
+      url("./../../../assets/images/Ellipse\ 1.png");
     border-radius: 50%;
     height: 30px;
     width: 30px;
   }
 
-  &--user {
+  &__user {
     flex-grow: 99;
 
-    .header--name {
+    .header__name {
       font-size: 12px;
     }
 
-    .header--points {
+    .header__points {
       display: flex;
 
-      .header--crown {
+      .header__crown {
         margin-left: 10px;
       }
     }
   }
 
-  &--add {
+  &__add {
     align-items: center;
     display: flex;
     flex-grow: 1;

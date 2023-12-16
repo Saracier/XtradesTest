@@ -8,7 +8,7 @@ export class MockUserService {
   public userData: IUserData[] = [
     {
       id: 1,
-      img: '/assets/user1.png',
+      img: '/assets/images/user1.png',
       alert: '28',
       winRate: '52%',
       yieldValue: '10%',
@@ -23,7 +23,7 @@ export class MockUserService {
     },
     {
       id: 2,
-      img: '/assets/user2.png',
+      img: '/assets/images/user2.png',
       alert: '30',
       winRate: '86%',
       yieldValue: '-10%',
@@ -38,7 +38,7 @@ export class MockUserService {
     },
     {
       id: 6,
-      img: '/assets/user6.jpg',
+      img: '/assets/images/user6.jpg',
       alert: '22',
       winRate: '75%',
       yieldValue: '9%',
@@ -53,7 +53,7 @@ export class MockUserService {
     },
     {
       id: 7,
-      img: '/assets/user7.jpg',
+      img: '/assets/images/user7.jpg',
       alert: '14',
       winRate: '60%',
       yieldValue: '12%',
@@ -68,7 +68,7 @@ export class MockUserService {
     },
     {
       id: 8,
-      img: '/assets/user8.jpg',
+      img: '/assets/images/user8.jpg',
       alert: '35',
       winRate: '82%',
       yieldValue: '7%',
@@ -83,7 +83,7 @@ export class MockUserService {
     },
     {
       id: 9,
-      img: '/assets/user9.jpg',
+      img: '/assets/images/user9.jpg',
       alert: '19',
       winRate: '69%',
       yieldValue: '5%',
@@ -98,7 +98,7 @@ export class MockUserService {
     },
     {
       id: 10,
-      img: '/assets/user10.jpg',
+      img: '/assets/images/user10.jpg',
       alert: '50',
       winRate: '90%',
       yieldValue: '20%',

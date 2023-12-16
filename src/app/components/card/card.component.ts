@@ -19,13 +19,8 @@ export class CardComponent implements OnInit {
   }
 
   seedUsers() {
-    const alreadyUsed: number[] = [];
     for (let i = 0; i < 7; i++) {
-      let newUser = this._mockUserDataService.mockUserFromUsers();
-      while (alreadyUsed.includes(newUser.id)) {
-        newUser = this._mockUserDataService.mockUserFromUsers();
-      }
-      this.users.push(newUser);
+      this.users.push(this._mockUserDataService.userData[i]);
     }
   }
 }

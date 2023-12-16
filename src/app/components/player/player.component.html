@@ -1,21 +1,21 @@
 <div class="player">
-  <div class="player--background">
-    <div class="player--color">
-      <div class="player--place">
-        <div class="place--number">{{ place }}</div>
-        <div class="place--text">
+  <div class="player__background">
+    <div class="player__color">
+      <div class="player__place">
+        <div class="place__number">{{ place }}</div>
+        <div class="place__text">
           {{ place === "1" ? "st" : place === "2" ? "nd" : "rd" }}
         </div>
       </div>
     </div>
     <div
-      class="player--shade"
-      [class.player--shade__won]="user.moneyOnPlus"
-      [class.player--shade__lost]="!user.moneyOnPlus"
+      class="player__shade"
+      [class.player__shade--won]="user.moneyOnPlus"
+      [class.player__shade--lost]="!user.moneyOnPlus"
     ></div>
   </div>
-  <div class="player--data">
-    <div class="player--img">
+  <div class="player__data">
+    <div class="player__img">
       <img [src]="user.img" alt="user image" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +32,8 @@
         />
       </svg>
     </div>
-    <div class="player--statictics">
-      <div class="player--name">
+    <div class="player__statictics">
+      <div class="player__name">
         {{ user.firstName }} {{ user.secondName }}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,30 +52,30 @@
           />
         </svg>
       </div>
-      <div class="player--score">
-        <div class="player--score__single">
-          <span class="score--number">{{ user.alert }}</span>
-          <span class="score--description">Alerts</span>
+      <div class="player__score">
+        <div class="player__score--single">
+          <span class="score__number">{{ user.alert }}</span>
+          <span class="score__description">Alerts</span>
         </div>
-        <div class="player--score__single">
-          <span class="score--number">{{ user.winRate }}</span>
-          <span class="score--description">Win Rate</span>
+        <div class="player__score--single">
+          <span class="score__number">{{ user.winRate }}</span>
+          <span class="score__description">Win Rate</span>
         </div>
-        <div class="player--score__single">
-          <span class="score--number">{{ user.yieldValue }}</span>
-          <span class="score--description">Yield</span>
+        <div class="player__score--single">
+          <span class="score__number">{{ user.yieldValue }}</span>
+          <span class="score__description">Yield</span>
         </div>
       </div>
     </div>
     <div
-      class="player--balance"
-      [class.player--balance__won]="user.moneyOnPlus"
-      [class.player--balance__lost]="!user.moneyOnPlus"
+      class="player__balance"
+      [class.player__balance--won]="user.moneyOnPlus"
+      [class.player__balance--lost]="!user.moneyOnPlus"
     >
-      <span class="balance--money"
+      <span class="balance__money"
         >{{ user.moneyOnPlus ? "+" : "-" }} {{ user.money }}</span
       >
-      <span class="balance--percentage">{{ user.winRate }}</span>
+      <span class="balance__percentage">{{ user.winRate }}</span>
     </div>
   </div>
 </div>

@@ -1,11 +1,11 @@
-.button--reset {
+.button__reset {
   border: none;
   cursor: pointer;
   font: inherit;
   padding: 0;
 }
 
-.button--add {
+.button__add {
   background: linear-gradient(#087aff, #72eab5);
   border-radius: 50%;
   box-shadow: 0 0px 12px 2px rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
@@ -14,35 +14,35 @@
   height: 50px;
   transition: all 0.2s;
   width: 50px;
-}
 
-.button--add:hover {
-  box-shadow: 0 0px 25px 2px rgb(255, 255, 255, 0.2),
-    0 6px 20px 0 rgb(255, 255, 255, 0.2);
-  transform: scale(1.1);
-}
+  &:hover {
+    box-shadow: 0 0px 25px 2px rgb(255, 255, 255, 0.2),
+      0 6px 20px 0 rgb(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
 
-.button--add::after {
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  transition: all 0.4s;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
+  &::after {
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: all 0.4s;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
 
-.button--add:hover::after {
-  opacity: 0;
-  transform: scaleX(1.4) scaleY(1.6);
-}
+  &:hover::after {
+    opacity: 0;
+    transform: scaleX(1.4) scaleY(1.6);
+  }
 
-.button--add__animation {
-  animation: moveInBottom 0.3s ease-out;
-  animation-fill-mode: backwards;
+  &--animation {
+    animation: moveInBottom 0.3s ease-out;
+    animation-fill-mode: backwards;
+  }
 }
 
 @keyframes moveInBottom {

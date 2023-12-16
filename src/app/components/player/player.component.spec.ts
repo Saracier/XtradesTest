@@ -18,7 +18,7 @@ describe('PlayerComponent', () => {
 
     component.user = {
       id: 1,
-      img: '/assets/user1.png',
+      img: '/assets/images/user1.png',
       alert: '28',
       winRate: '52%',
       yieldValue: '10%',

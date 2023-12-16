@@ -5,17 +5,17 @@
   overflow: hidden;
   position: relative;
 
-  &--background {
+  &__background {
     display: flex;
     height: 100%;
     width: 100%;
 
-    .player--color {
+    .player__color {
       background-color: #cae2cc;
       height: 77px;
       width: 50px;
 
-      .player--place {
+      .player__place {
         font-style: italic;
         left: 3px;
         opacity: 0.2;
@@ -23,13 +23,13 @@
         position: relative;
         top: -10px;
 
-        .place--number {
+        .place__number {
           display: inline-block;
           font-size: 33px;
           font-weight: 600;
         }
 
-        .place--text {
+        .place__text {
           display: inline-block;
           font-size: 16px;
           font-weight: 600;
@@ -39,18 +39,18 @@
       }
     }
 
-    .player--shade {
+    .player__shade {
       opacity: 0.15;
       width: calc(100% - 50px);
     }
-    .player--shade__won {
+    .player__shade--won {
       background: linear-gradient(
         90deg,
         rgba(129, 237, 186, 0) 0%,
         #54ffae 100%
       );
     }
-    .player--shade__lost {
+    .player__shade--lost {
       background: linear-gradient(
         90deg,
         rgba(255, 111, 111, 0) 0%,
@@ -59,7 +59,7 @@
     }
   }
 
-  .player--data {
+  .player__data {
     align-items: center;
     display: flex;
     height: 100%;
@@ -67,7 +67,7 @@
     position: relative;
     top: -77px;
 
-    .player--img {
+    .player__img {
       margin-left: 15px;
       position: relative;
 
@@ -85,27 +85,27 @@
       }
     }
 
-    .player--statictics {
+    .player__statictics {
       color: white;
       margin-left: 13px;
 
-      .player--name {
+      .player__name {
         font-size: 16px;
       }
 
-      .player--score {
+      .player__score {
         display: flex;
 
-        .player--score__single {
+        .player__score--single {
           display: flex;
           flex-direction: column;
           margin-right: 10px;
 
-          .score--number {
+          .score__number {
             font-size: 14px;
           }
 
-          .score--description {
+          .score__description {
             font-size: 10px;
             font-weight: 400;
             opacity: 0.5;
@@ -114,7 +114,7 @@
       }
     }
 
-    .player--balance {
+    .player__balance {
       display: flex;
       flex-direction: column;
       font-weight: 600;
@@ -123,21 +123,21 @@
       text-align: right;
       top: 40px;
 
-      .balance--money {
+      .balance__money {
         font-size: 14px;
       }
 
-      .balance--percentage {
+      .balance__percentage {
         font-size: 10px;
       }
-    }
 
-    .player--balance__won {
-      color: #88ffc7;
-    }
+      &--won {
+        color: #88ffc7;
+      }
 
-    .player--balance__lost {
-      color: #ff6f6f;
+      &--lost {
+        color: #ff6f6f;
+      }
     }
   }
 }

@@ -1,22 +1,22 @@
 <div class="card">
-  <div class="card--top">
-    <div class="card--top--logos">
-      <div class="logo--badge">
+  <div class="card__top">
+    <div class="card__top--logos">
+      <div class="logo__badge">
         <img [src]="users[0].img" alt="user1" />
       </div>
-      <div class="logo--badge">
+      <div class="logo__badge">
         <img [src]="users[1].img" alt="user2" />
       </div>
-      <div class="logo--badge">
+      <div class="logo__badge">
         <img [src]="users[2].img" alt="user3" />
       </div>
-      <div class="logo--count">
-        <div class="logo--number">{{ numberOfParticipants }}</div>
+      <div class="logo__count">
+        <div class="logo__number">{{ numberOfParticipants }}</div>
       </div>
     </div>
     <div class="status" [class.hide]="isTooLateToJoin">Too late to join</div>
   </div>
-  <div class="card--title">Weekly Challenges</div>
+  <div class="card__title">Weekly Challenges</div>
   <app-player place="1" [user]="users[3]"></app-player>
   <app-player place="2" [user]="users[4]"></app-player>
   <app-player place="3" [user]="users[5]"></app-player>

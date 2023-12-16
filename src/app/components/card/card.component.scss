@@ -8,7 +8,7 @@
   padding: 15px;
   width: 332px;
 
-  &--top {
+  &__top {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@
       display: flex;
       justify-content: center;
 
-      .logo--badge {
+      .logo__badge {
         border-radius: 50%;
         display: inline-block;
         height: 100%;
@@ -34,7 +34,7 @@
         }
       }
 
-      .logo--count {
+      .logo__count {
         background-color: #2b2e30;
         border-radius: 50%;
         color: white;
@@ -46,7 +46,7 @@
         text-align: center;
         width: 16px;
 
-        .logo--number {
+        .logo__number {
           align-items: center;
           display: flex;
           font-weight: 400;
@@ -65,7 +65,7 @@
     }
   }
 
-  &--title {
+  &__title {
     color: white;
     font-size: 20px;
     margin: 18px 0 22px 0;
